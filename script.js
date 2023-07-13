@@ -105,3 +105,12 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
         RandomSquareEffect();
     })();
 }
+
+const menu_button = document.getElementById('menu-button');
+const menu_panel = document.getElementById('menu-panel');
+
+menu_button.addEventListener('click', () => 
+{
+    menu_button.classList.toggle('active');
+    menu_panel.classList.toggle('active');
+});
