@@ -1,0 +1,21 @@
+{
+    "cover": "demo.jpg",
+    "title": "Goormorning",
+    "content": 
+    [
+        {
+            "type": "text",
+            "content": "Hello there"
+        },
+        {
+            "type": "text",
+            "content": ""
+        },
+        {
+            "type": "text",
+            "content": "I then relaised that having it soley on a computer would be pretty dumb, because not everyone owns a drawing tablet (which is better than a mouse, for your information), so I spent some aditional time adding PWA (web app) support to my website to make it installable as an app."
+        }
+    ],
+    "published": "2024/1/25",
+    "edited": "2024/1/25"
+}
