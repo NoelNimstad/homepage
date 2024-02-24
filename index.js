@@ -1,4 +1,5 @@
 const wrapper = document.getElementById("left");
+let interval;
 
 function generateTiles()
 {   
@@ -29,7 +30,8 @@ function generateTiles()
 
     if(!matchMedia("(pointer:fine)").matches) 
     {
-        setInterval(() => 
+        clearInterval(interval);
+        interval = setInterval(() => 
         {
             let index = Math.floor(Math.random() * tiles.length);
             tiles[index].style.border = `solid 15px #${ ((1 << 24) * Math.random() | 0).toString(16) }`;
