@@ -1,0 +1,16 @@
+{
+	"button-language": "SV🇸🇪",
+
+	"title-home": "Home",
+	"title-resume": "Résumé",
+	"title-introduction": "Introduction",
+	"title-contact": "Get in touch",
+
+	"tagline": "Fighting math & physics by day, fighting vim by night.",
+
+	"text-paragraph-1": "My name is Noel Mide Nimstad, and I am a student at Chalmers, and a hobby programmer whenever I find the time (also known as making time using the art of procastination🌈).",
+	"text-paragraph-2": "My favourite programming languages are Zig, C, and JS/TS.",
+	"text-email": "Email",
+
+	"footer": "By Noel M. Nimstad"
+}

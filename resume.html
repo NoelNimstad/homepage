@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NæMN</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="lang/translator.js" defer></script>
+		<!-- External -->
+		<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="index.html" data-i18n="title-home"></a>
+				<a href="blog.html">Sententiæ</a>
+				<a href="resume.html" data-i18n="title-resume"></a>
+				<a href="#" onclick="changeLanguage()" data-i18n="button-language"></a>
+			</nav>
+			<h1>
+				NæMN<a href="https://github.com/NoelNimstad">.dev</a>
+			</h1>
+			<p data-i18n="tagline"></p>
+		</header>
+		<h1 data-i18n="title-resume"></h1>
+<footer>
+			<p>
+				<span data-i18n="footer"></span>・<code id="count">2026</code>
+			</p>
+		</footer>
+		<script>
+			const counter = document.getElementById("count");
+
+			const start = Date.now();
+
+			const animation = () =>
+			{
+				const now = Date.now();
+				const dt = now - start;
+				const prog = dt / 5_000;
+
+				const simulated_year = 2026 * Math.sin(Math.PI / 2 * prog);
+				
+				counter.textContent =
+					Math.floor(simulated_year)
+						.toString()
+						.padStart(4, "0");
+
+				if (dt < 5_000)
+				{
+					requestAnimationFrame(animation);
+				} else
+				{
+					counter.textContent = "2026";
+				}
+			}
+
+			requestAnimationFrame(animation);
+		</script>
+	</body>
+</html>
